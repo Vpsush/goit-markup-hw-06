@@ -364,16 +364,72 @@
   </div>
   </div>
   </footer>
-<div class="backdrop is-hidden" data-modal>
+<div class="backdrop " data-modal>
 <div class="modal">
 <button type="button" class="modal-close-button" data-modal-close>
 <svg class="modal-close-button-icon" width="8" height="8">
   <use href="./images/icons.svg#icon-modal-close">
-
   </use>
 </svg>
-
 </button>
+<form class="contact-form">
+  <p class="name-form">
+    Leave your contacts and we will call you back
+  </p>
+  <label class="label-modal-field" >
+   <span class="what-write">Name</span></p>
+   <input 
+  type="text" 
+  class="contact-form-input" 
+  name="user_name" 
+  required 
+  minlength="2"
+  pattern="^[a-zA-Z]+$">
+  <svg class="form-icon" width="12" height="12">
+    <use href="./images/icons.svg#icon-person-black-18dp-1">
+    </use>
+  </svg></label>
+  <label class="label-modal-field">
+    <span class="what-write"> Phone</span></p>
+  <input 
+  type="tel" 
+  class="contact-form-input" 
+  name="user_phone" 
+  required 
+  pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}">
+  <svg class="form-icon" width="13" height="13">
+    <use href="./images/icons.svg#icon-phone-black-18dp-1">
+    </use>
+  </svg></label>
+  <label class="label-modal-field" >
+     <span class="what-write"> Email</span></p>
+  <input 
+  type="email" 
+  class="contact-form-input" 
+  name="user_email" 
+  required 
+  pattern="^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$">
+  <svg class="form-icon" width="15" height="12">
+    <use href="./images/icons.svg#icon-email-black-18dp-1">
+    </use>
+  </svg> </label>
+  <label >
+  <p class="what-write">Comment</p>
+  <textarea 
+  name="comment" 
+  class="contuct-form-message"
+  placeholder="Text input"></textarea></label>
+  <!-- <div class="contuct-form-fielder"> -->
+   <label >
+    <input type="checkbox" 
+    class="contuct-form-checkbox"
+    value="agree">I accept the terms and conditions of the 
+    <a href="">Privacy Policy</a></label>
+      <!-- </div> -->
+  <div class="contuct-form-btn-wrapper">
+  <button type="submit" class="contuct-form-btn">Send</button>
+</div>
+</form>
 </div>
   </div>
   <script src="./js/modal.js"></script>
