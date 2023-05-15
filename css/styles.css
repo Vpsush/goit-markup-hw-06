@@ -877,9 +877,65 @@ color: #8E8F99;
 /* ===============/FORM============ */
 
    
+   /* ===============FOOTER-FORM============ */
+.email-subscribe{
+    font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+align-items: center;
+text-align: center;
+letter-spacing: 0.04em;
+color: #FFFFFF;
+}
+.footer-form-container{
+    display: flex;
+    /* justify-content: space-between; */
+    margin-top: 16px;
+    width: 453px;
+    /* height: 40px; */
+    /* padding-right: 858px; */
+         /* width: 408px; */
+    /* padding: 24px; */
+    /* margin-top: 112px; */
+  
+}
+.footer-form-imput-wrapper{
+    position: relative;
+    width: 264px;
+    height: 40px;
+    border-radius: 4px;
    
-
+    /* padding-left: 38px;
+    
+    margin-bottom: 8px;
+  
+    /* left: 0; */
+    /* top: 18px; */
+     /* border: 1px solid rgba(46, 47, 66, 0.4);  */
+    /* border-radius: 4px; */
+    /* transition: border-color var(--transition);   */
+}
+.footer-sent-email-icon{
+display: flex;
+justify-content: center;
+align-items: center;
+position: absolute;
+}
+.form-footer-btn{
  
+    align-items: center;
+    /* margin-top: 16px; */
+    /* margin-bottom: 24px; */
+    height: 40px;
+    width: 165px;
+    /* left: 635px; */
+    /* top: 584px; */
+    background: #4D5AE5;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    transition: color var(--transition), background-color var(--transition), border-color var(--transition), box-shadow var(--transition);
+    }
+ /* ===============/FOOTER-FORM============ */
  
 
 
