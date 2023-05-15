@@ -377,9 +377,8 @@
     Leave your contacts and we will call you back
   </p>
   <label class="label-modal-field" >
-    <span class="what-write">Name</span></p>
-    <div class="modal-form-imput-wrapper">
-   
+    <span class="what-write">Name</span>
+    <span class="modal-form-imput-wrapper">
    <input 
   type="text" 
   class="contact-form-input" 
@@ -388,12 +387,13 @@
   minlength="2"
   pattern="^[a-zA-Z]+$">
   <svg class="form-icon" width="12" height="12">
-    <use href="./images/icons.svg#icon-person-black-18dp-1">
+    <use href="./images/icons.svg#icon-Vector-14">
     </use>
-  </svg></label></div>
+  </svg></span>
+</label>
   <label class="label-modal-field">
-    <span class="what-write"> Phone</span></p>
-    <div class="modal-form-imput-wrapper">
+    <span class="what-write"> Phone</span>
+    <span class="modal-form-imput-wrapper">
   <input 
   type="tel" 
   class="contact-form-input" 
@@ -402,13 +402,12 @@
   pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
   title="xxx-xxx-xx-xx">
   <svg class="form-icon" width="13" height="13">
-    <use href="./images/icons.svg#icon-phone-black-18dp-1">
+    <use href="./images/icons.svg#icon-Vector-15">
     </use>
-  </svg></label></div>
+  </svg></span></label>
   <label class="label-modal-field" >
-    <span class="what-write"> Email</span></p>
-    <div class="modal-form-imput-wrapper">
-    
+    <span class="what-write"> Email</span>
+    <span class="modal-form-imput-wrapper">
   <input 
   type="email" 
   class="contact-form-input" 
@@ -416,23 +415,23 @@
   required 
   pattern="^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$">
   <svg class="form-icon" width="15" height="12">
-    <use href="./images/icons.svg#icon-email-black-18dp-1">
+    <use href="./images/icons.svg#icon-Vector-16">
     </use>
-  </svg> </label></div>
+  </svg></span> </label>
   <label >
-  <p class="what-write">Comment</p>
+  <span class="what-write">Comment</span>
   <textarea 
   name="comment" 
   class="contuct-form-message"
   placeholder="Text input"></textarea></label>
   <!-- <div class="contuct-form-fielder"> -->
-   <label >
+   <label class="modal-form-checkbox">
     <input 
     type="checkbox" 
-    class="contuct-form-checkbox"
+    class="contuct-form-checkbox visually-hidden"
     name="user-policy"
-    value="agree">I accept the terms and conditions of the 
-    <a href="">Privacy Policy</a></label>
+    value="agree">I accept the terms and conditions of the&nbsp;  
+        <a href=""> Privacy Policy</a></label>
       <!-- </div> -->
   <div class="contuct-form-btn-wrapper">
   <button type="submit" class="contuct-form-btn">Send</button>
