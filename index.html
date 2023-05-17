@@ -368,7 +368,6 @@
   </p>
   <form class="form-footer">
   <label class="label-footer" >
-    <!-- <span class="footer-form-imput-wrapper"> -->
    <input 
   type="email" 
   class="footer-form-input" 
@@ -376,7 +375,6 @@
   placeholder="E-mail"
   required 
   pattern="^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$">
- <!-- </span> -->
 </label>
       <button type="submit" class="form-footer-btn"><span class="email-subscribe">Subscribe</span>
         <svg class="footer-sent-email-icon" width="24" height="20">
@@ -447,14 +445,15 @@
   name="comment" 
   class="contuct-form-message"
   placeholder="Text input"></textarea></label>
-   <label class="modal-form-checkbox">
-    <input 
-    type="checkbox" 
-    class="contuct-form-checkbox-input visually-hidden"
-    name="user-policy">
-     <span class="agree-with-policy">I accept the terms and conditions of the&nbsp;</span>  
+  <input 
+  type="checkbox" 
+  class="contuct-form-checkbox-input "
+  name="user-policy"
+  id="user-policy">
+   <label class="modal-form-checkbox" for="user-policy">
+     <span class="agree-with-policy">   <span> I accept the terms and conditions of the&nbsp;</span></span>  
         <a  href=""> Privacy Policy</a>
-      <span class="form-unvisual-button"> </span>
+      <!-- <span class="form-unvisual-button"> </span> -->
     </label>
     <div class="contuct-form-btn-wrapper ">
   <button type="submit" class="contuct-form-btn ">Send</button>

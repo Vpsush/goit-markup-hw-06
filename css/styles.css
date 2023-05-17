@@ -762,37 +762,25 @@ transition: color var(--transition), background-color var(--transition), border-
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .contuct-form-checkbox-input{
-    position: absolute;
-    /* clip: rect(0 0 0 0);
-  /* width: 1px;
-  height: 1px;
-  margin: -1px; */ 
+ display: block; 
+ clip: rect(0 0 0 0);
+
 }
-.contuct-form-checkbox-input:checked + .form-unvisual-button{
-    background-color: #404BBF;
-    background-image: url(images/Vector.svg);
-    }
-.contuct-form-checkbox-input:focus + .form-unvisual-button{
-    outline: none;
-        border-color: 
-        rgba(77, 90, 229, 1);
-        fill:  rgba(77, 90, 229, 1) ;
-    background-image: url(images/Vector.svg);
-    }
-/* .contuct-form-checkbox-input:disabled + .form-unvisual-button{
-    background-color: #404BBF;
-     background-image: url(images/Vector.svg);
-}
-.contuct-form-checkbox-input:checked:disabled + .form-unvisual-button{
-        outline: none;
-            border-color: 
-            rgba(77, 90, 229, 1);
-            fill:  rgba(77, 90, 229, 1) ;
-        background-image: url(images/Vector.svg);
-        } */
 .agree-with-policy{
-    position:sticky;
-   margin-left: 24px;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    overflow: hidden;
+    border-radius: 2px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    box-shadow: 0 0 0 0.1em #4A90E2;
+    cursor: pointer;
+    fill: transparent;
+    white-space: nowrap;
+    clip-path: 100%;
+    /* clip: rect(0 0 0 0); */
+
 }
 .contact-form-input{
     width: 100%;
@@ -801,6 +789,7 @@ transition: color var(--transition), background-color var(--transition), border-
     display: flex;
     padding-left: 38px;
       margin-bottom: 8px;
+     
     left: 0;
     top: 18px;
     border: 1px solid rgba(46, 47, 66, 0.4);
@@ -849,20 +838,25 @@ transition: fill var(--transition);
     display: block;
     font-size: 12px;
 }
-.form-unvisual-button{
+.contuct-form-checkbox-input + .modal-form-checkbox > .agree-with-policy{
+    /* outline: none;
+    border-color: 
+    rgba(77, 90, 229, 1); */
+    background-color: rgba(77, 90, 229, 1) ; 
+    background-image: url(../images/Vector.svg);  
+}
+/* .form-unvisual-button{
     position: absolute;
     top: 0;
     left: 24px;
     margin-top: 464px;
-    /* overflow: hidden;
-    background-position: 50% 50%; */
     width: 16px;
     height: 16px;
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 2px;
     cursor: pointer;  
 
-}
+} */
 .modal-form-imput-wrapper{
     display:block ;
     position: relative;
@@ -890,63 +884,52 @@ color: #8E8F99;
    
    /* ===============FOOTER-FORM============ */
 .footer-form-container{
-    display: block;
-    margin-right: 828px;
+margin-left: auto;
+    /* display: block;
+    margin-right: 828px; */
     /* margin-right: 35px; */
 }
-   .form-footer{
+.form-footer{
 display: flex;
 align-items: baseline;
 
 /* justify-content: space-evenly; */
 }
-.footer-form-imput{
-    position: absolute;
-       /* width: 264px; */
+.footer-form-input{
+    /* position: absolute; */
+    width: 264px;
     height: 40px;
-    border: 1px solid rgba(46, 47, 66, 0.4);
-    border-radius: 4px;
-   
+    padding-left:16px ;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-right: 24px;
+    border: 1px solid #FFFFFF;
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+border-radius: 4px;
+   background-color:transparent;
     transition: border-color var(--transition);  
 }
-
+.form-footer::placeholder{
+    color: white;
+}
  .email-subscribe{
     width: 77px;
-   /* left: 0; */
+    
     font-weight: 500;
 font-size: 16px;
 line-height: 1.5;
-margin-right: 16px;
-/* margin-left: 24px; */
-/* align-items: center; */
-/* text-align: left; */
+margin-left: 24px;
 letter-spacing: 0.04em;
 color: #FFFFFF;
-
-/* padding-left: 16px; */
 }
-/* .form-footer{
-        display: flex;
-    align-items: baseline;
-   
 
-} */
-
-
- .footer-sent-email-icon{
-/* display: flex; */
-/* justify-content: center; */
-/* align-items: center; */
-
- }  
 .form-footer-btn{
- 
+ display: flex;
     align-items: center;
-  /* margin-left: 159px; */
+    gap: 16px;
     height: 40px;
     width: 165px;
-   /* align-items: space-between; */
-    background: #4D5AE5;
+    background-color: #4D5AE5;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     transition: color var(--transition), background-color var(--transition), border-color var(--transition), box-shadow var(--transition);
