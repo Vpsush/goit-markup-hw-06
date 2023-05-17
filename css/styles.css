@@ -842,6 +842,8 @@ transition: fill var(--transition);
     /* outline: none;
     border-color: 
     rgba(77, 90, 229, 1); */
+    fill: white;
+    border: none;
     background-color: rgba(77, 90, 229, 1) ; 
     background-image: url(../images/Vector.svg);  
 }
