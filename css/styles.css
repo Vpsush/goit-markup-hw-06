@@ -831,12 +831,12 @@ transform: translateY(100%);
 transition: fill var(--transition);
 }
 .modal-form-checkbox{
-    font-weight: 400;
+    /* font-weight: 400;
     font-size: 12px;
-    line-height: 1.16;
+    line-height: 1.16; */
     letter-spacing: 0.04em;
     color: #8E8F99;
-    margin-bottom: 16px;
+   
     font-size: 12px;
 }
 .label-modal-field{
